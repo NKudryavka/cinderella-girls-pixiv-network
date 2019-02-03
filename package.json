@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "parcel": "mkdir dist; cp data/illust-data.json dist; parcel page/index.html"
+    "parcel": "mkdir dist; cp data/illust-data.json dist; parcel page/index.html",
+    "build": "parcel build --public-url ./ page/index.html && cp data/illust-data.json dist/"
   },
-  "author": "",
+  "author": "NKudryavka",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
